@@ -73,7 +73,7 @@
                     <p>Haz click en el siguiente enlace para ver indicaciones y recomendaciones para
                         imprimir tu kit.
                     </p>
-                    <a href="Consejos.html">Ir a página</a>
+                    <a href="Consejos.html">Consejos</a>
                 </div>
             </div>
         </section>
@@ -89,15 +89,14 @@
 
             <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
 
-                <!-- Formulario -->
                 <div id="formulario">
                     <h3 style="color: #161b26">Formulario</h3>
-                    <form>
+                    <form action="https://formspree.io/f/xnndepya" method="POST">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
 
                         <label for="telefono">Teléfono (opcional):</label>
                         <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11 2345 6789">
@@ -110,7 +109,6 @@
                     <p style="margin-top: 10px;">También podés escribirnos a <em>ejemplo123@gmail.com</em></p>
                 </div>
 
-                <!-- Mapa -->
                 <div id="ubicacion">
                     <h3 style="color: #161b26">Ubicación</h3>
                     <div class="mapa">

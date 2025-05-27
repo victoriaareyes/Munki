@@ -78,7 +78,7 @@ h2{
 }
 
 .funciona-card {
-    background-color: #E4CFCF; /* Rosa empolvado */
+    background-color: #E4CFCF;
     border: 1px solid #E4CFCF;
     border-radius: 12px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
@@ -86,7 +86,7 @@ h2{
     max-width: 300px;
     flex: 1 1 250px;
     text-align: left;
-    color: #5E3023; /* Texto marrón intenso */
+    color: #5E3023;
 }
 
 .funciona-card h4 {
@@ -215,7 +215,7 @@ h2{
     justify-content: center;
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff5e6; /* un fondo suave opcional */
+    background-color: #fff5e6;
     border-radius: 12px;
 }
 
@@ -241,7 +241,7 @@ h2{
 
 /*Footer*/
 footer {
-    background-color: #c2c7bd; /* Color celeste */
+    background-color: #c2c7bd;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
