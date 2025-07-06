@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imágenes/logo-munki.png" alt="Logo Munki">
+        </a>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#sobre-nosotros">Nosotros</a></li>
+                <li><a href="index.html#como-funciona">¿Cómo funciona?</a></li>
+                <li><a href="index.html#contacto">Contactanos</a></li>
+                <li><a href="Consejos.html">Consejos</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="https://ko-fi.com/munkiprintables/shop" target="_blank">KO-FI SHOP</a></li>
+                <li>
+                    <a href="carrito.html" class="carrito-icono">
+                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="inicio">
+            <h1>Bienvenido a Munki Kits Imprimibles</h1>
+            <p>¡Aquí encontrarás los diseños más completos y delicados para imprimir, armar y decorar tu fiesta!</p>
+            <img src="imágenes/tu-imprimes-munki.png" alt="Tú imprimes con Munki" class="imagen-inicio">
+        </section>
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Munki es un emprendimiento de diseño dedicado a crear kits de imprimibles con amor y dedicación.</p>
+            <p>Nos enfocamos en brindar productos creativos, accesibles y fáciles de usar para hacer que tus
+                celebraciones sean inolvidables. Creemos en la importancia de los pequeños detalles. Por eso, cada
+                producto está cuidadosamente diseñado para combinar estética, funcionalidad y facilidad de uso.</p>
+            <p>Ya sea que estés organizando un cumpleaños, un baby shower, una boda o simplemente quieras darle un
+                toque
+                especial a una ocasión, en Munki vas a encontrar ideas que se adaptan a tu estilo y presupuesto.</p>
+            <p>Todos nuestros Kits Imprimibles llegan por correo electrónico y se imprimen con Acrobat Reader, un
+                software gratuito.</p>
+        </section>
+        <hr style="margin: 20px 0;">
+        <section id="como-funciona">
+            <h2>¿Cómo Funciona?</h2>
+            <div class="funciona-contenedor">
+                <div class="funciona-card">
+                    <h4><i class="fa-solid fa-credit-card fa-lg" style="color: #5E3023;"></i> COMPRA DESDE CUALQUIER
+                        PAÍS!</h4>
+                    <p>Paga con Mercado Pago y Transferencia en Argentina.
+                        Desde otros países pagas con PayPal de forma fácil y segura.</p>
+                </div>
+                <div class="funciona-card">
+                    <h4><i class="fa-solid fa-envelope-circle-check fa-lg" style="color:  #5E3023;"></i> ENVÍO
+                        DIGITAL
+                        GRATIS!</h4>
+                    <p>Lo enviamos por mail a cualquier parte del Mundo. Puedes descargar Gratis Acrobat
+                        Reader haciendo <a href="https://get.adobe.com/es/reader/" target="_blank">click aquí</a>!
+                        Instálalo en tu computadora.</p>
+                </div>
+                <div class="funciona-card">
+                    <h4><i class="fa-solid fa-print fa-lg" style="color:  #5E3023;"></i> FÁCIL! TÚ IMPRIMES</h4>
+                    <p>Haz click en el siguiente enlace para ver indicaciones y recomendaciones para
+                        imprimir tu kit.
+                    </p>
+                    <a href="Consejos.html">Consejos</a>
+                </div>
+            </div>
+        </section>
+        <hr style="margin: 20px 0;">
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p style="text-align: center;">Si tenés alguna pregunta, comentario o sugerencia, no dudes en
+                escribirnos.
+            </p>
+            <p style="text-align: center;">Completá el siguiente formulario y nos pondremos en contacto con vos lo
+                antes
+                posible.</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+                <div id="formulario">
+                    <h3 style="color: #161b26">Formulario</h3>
+                    <form id="contactoForm" action="https://formspree.io/f/xnndepya" method="POST">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11 2345 6789">
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje..."
+                            required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p style="margin-top: 10px;">También podés escribirnos a <em>ejemplo123@gmail.com</em></p>
+                </div>
+
+                <div id="ubicacion">
+                    <h3 style="color: #161b26">Ubicación</h3>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.774565103741!2d-58.52574432383152!3d-34.50859905248168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter%20Shopping!5e0!3m2!1ses!2sar!4v1748319757503!5m2!1ses!2sar"
+                            style="border:0; width: 100%; height: 100%; min-height: 400px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>¡SEGUINOS!</h4>
+            <ul>
+                <li><a href="https://www.instagram.com/munki_imprimibles/" target="_blank"><i
+                            class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li><a href="https://ar.pinterest.com/mdiseosimprimibles/" target="_blank"><i
+                            class="fa-brands fa-pinterest fa-2xl"></i></a></li>
+                <li><a href="https://www.youtube.com/@munkidisenosimprimibles2245" target="_blank"><i
+                            class="fa-brands fa-youtube fa-2xl"></i></a></li>
+                <li><a href="https://www.facebook.com/munkiimprimibles/" target="_blank"><i
+                            class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li><a href="https://www.tiktok.com/@munkiok" target="_blank"><i
+                            class="fa-brands fa-tiktok fa-2xl"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/menuHamburguesa.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

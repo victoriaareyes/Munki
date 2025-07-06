@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+        <a href="index.html" class="logo">
+            <img src="imágenes/logo-munki.png" alt="Logo Munki">
+        </a>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#sobre-nosotros">Nosotros</a></li>
+                <li><a href="index.html#como-funciona">¿Cómo funciona?</a></li>
+                <li><a href="index.html#contacto">Contactanos</a></li>
+                <li><a href="Consejos.html">Consejos</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="https://ko-fi.com/munkiprintables/shop" target="_blank">KO-FI SHOP</a></li>
+                <li>
+                    <a href="carrito.html" class="carrito-icono">
+                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <h1>Carrito de Compras</h1>
+    <section id="contenedor-carrito">
+      <!-- JS insertará los productos aquí -->
+    </section>
+
+    <section id="resumen-carrito">
+      <!-- JS insertará el resumen aquí -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <h4>¡SEGUINOS!</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/munki_imprimibles/" target="_blank"><i
+              class="fa-brands fa-instagram fa-2xl"></i></a></li>
+        <li><a href="https://ar.pinterest.com/mdiseosimprimibles/" target="_blank"><i
+              class="fa-brands fa-pinterest fa-2xl"></i></a></li>
+        <li><a href="https://www.youtube.com/@munkidisenosimprimibles2245" target="_blank"><i
+              class="fa-brands fa-youtube fa-2xl"></i></a></li>
+        <li><a href="https://www.facebook.com/munkiimprimibles/" target="_blank"><i
+              class="fa-brands fa-facebook fa-2xl"></i></a></li>
+        <li><a href="https://www.tiktok.com/@munkiok" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="/js/menuHamburguesa.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+
+</html>
